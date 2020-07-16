@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>String Methods</title>
+</head>
+<body>
+	<script>
+		//length of the string
+		var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		var sln = txt.length;
+		document.write("Length: " + sln + "<br>");
+		
+		//Index of the string
+		var pos1 = txt.indexOf("M");
+		document.write("Index: " + pos1 + "<br>");
+		
+		//searching for a string in a string
+		var pos2 = txt.search("T");
+		document.write("Locate: " + pos2 + "<br>");
+		
+		//slice
+		var str2 = "Apple, Banana, Kiwi";
+		var res1 = str2.slice(7, 13);
+		document.write("Sliced: " + res1 + "<br>");
+		
+		//substring method
+		var res2 = str2.substring(7, 13);
+		document.write("Substring: " + res2 + "<br>");
+		
+		//Replace a string
+		var str3 = "Please visit Microsoft!";
+		var n = str3.replace("Microsoft", "W3Schools");
+		document.write("Replace: " + n + "<br>");
+		
+		//Convert to Uppercase
+		var text1 = "Hello World!";      
+		var text2 = text1.toUpperCase();
+		document.write("To Uppercase: " + text2 + "<br>");
+		
+		//convert to lowercase
+		var text3 = text1.toLowerCase();
+		document.write("To Lowercase: " + text3 + "<br>");
+	</script>
+</body>
+</html>
